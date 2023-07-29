@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="Soil">Soil Mixture:</string>
+    <string name="Water">Water Needs:</string>
+    <string name="Sow">Best Time to Sow:</string>
+    <string name="Harvest">Best Time to Harvest:</string>
+</resources>

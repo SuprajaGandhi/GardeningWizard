@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/smoky_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="@drawable/top_half_round" />
+
+                <TextView
+                    android:id="@+id/your_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Your Gardening Wizard"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="5dp"
+                    android:layout_below="@id/your_favorite"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/background" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/background"
+                    android:elevation="50dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/corn" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:lines="2"
+                                android:maxLines="2"
+                                android:text="Corn"
+                                android:textColor="@color/black"
+                                android:onClick="CornInfo"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:text="Zea mays"
+                                android:textColor="@color/gray"
+                                android:textStyle="italic"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/addCornButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/button"
+                                android:onClick="addCorn"
+                                android:text="Add to list"
+                                android:textAllCaps="false" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="270dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/background"
+                    android:elevation="50dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/radish" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:lines="2"
+                                android:maxLines="2"
+                                android:text="Radish"
+                                android:onClick="RadishInfo"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="194dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:text="Raphanus sativus"
+                                android:textColor="@color/gray"
+                                android:textSize="14sp"
+                                android:textStyle="italic" />
+
+                            <Button
+                                android:id="@+id/addRadishButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/button"
+                                android:onClick="addRadish"
+                                android:text="Add to list"
+                                android:textAllCaps="false" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="440dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/background"
+                    android:elevation="50dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/frenchbeans" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:lines="2"
+                                android:maxLines="2"
+                                android:text="Beans"
+                                android:onClick="BeansInfo"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="194dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:text="Phaseolus vulgaris"
+                                android:textColor="@color/gray"
+                                android:textSize="14sp"
+                                android:textStyle="italic" />
+
+                            <Button
+                                android:id="@+id/addBeansButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/button"
+                                android:onClick="addBeans"
+                                android:text="Add to list"
+                                android:textAllCaps="false" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="610dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/background"
+                    android:elevation="50dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/carrot" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:lines="2"
+                                android:maxLines="2"
+                                android:text="Carrot"
+                                android:onClick="CarrotInfo"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="194dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:text="Daucus carota subsp. sativus"
+                                android:textColor="@color/gray"
+                                android:textSize="14sp"
+                                android:textStyle="italic" />
+
+                            <Button
+                                android:id="@+id/addCarrotButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/button"
+                                android:onClick="addCarrot"
+                                android:text="Add to list"
+                                android:textAllCaps="false" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="780dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/background"
+                    android:elevation="50dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/cabbage" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:lines="2"
+                                android:maxLines="2"
+                                android:text="Cabbage"
+                                android:onClick="CabbageInfo"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="194dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:text="Brassica oleracea"
+                                android:textColor="@color/gray"
+                                android:textSize="14sp"
+                                android:textStyle="italic" />
+
+                            <Button
+                                android:id="@+id/addCabbageButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/button"
+                                android:text="Add to list"
+                                android:onClick="addCabbage"
+                                android:textAllCaps="false" />
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <include layout="@layout/bottom_menu" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>
+
